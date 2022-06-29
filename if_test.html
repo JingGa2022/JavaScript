@@ -1,0 +1,19 @@
+<script>
+    let id = "easy"
+    let pw = "1234"
+
+    let user_id = prompt("id", )
+    let user_pw = prompt("pw");
+
+    if(id === user_id){
+        if(pw === user_pw){
+            document.write(user_id + " hello")
+        }else{
+            alert("mismatch_pw");
+            location.reload();
+        }
+    }else{
+        alert("mismatch_id")
+        location.reload();
+    }
+</script>

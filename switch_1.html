@@ -1,0 +1,19 @@
+<script>
+    let site = prompt("네이버, 다음, 네이트, 구글 중\
+    즐겨 사용하는 포털은?",);
+    let url;
+
+    switch(site){
+        case "google": url = "www.google.com";
+        break;
+        case "daum": url = "www.daum.net";
+        break;
+        case "nate": url = "www.nate.com";
+        break;
+        case "naver": url = "www.naver.com";
+        break;
+        default: alert("none of example");
+    }
+
+    if(url) location.href = "http://"+url;
+</script>

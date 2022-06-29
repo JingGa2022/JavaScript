@@ -1,0 +1,10 @@
+<script>
+    let name = prompt("your name?", "");
+    let height = prompt("your height?", "0");
+    let weight = prompt("your weight?","0")
+
+    let normal_w = (height - 100) * 0.9;
+    let result = weight >= normal_w - 5 && weight <= normal_w + 5;
+    result = result ? "normal weight" : "unormal weight";
+    document.write(name +" "+ result)
+</script>

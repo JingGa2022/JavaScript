@@ -1,0 +1,21 @@
+<script>
+    let today = new Date();
+    let month = today.getMonth(),
+    date = today.getDate(),
+    day = today.getDay();
+
+    document.write("<h1> Today date info </h1>")
+    document.write("month: "+month,"<br>")
+    document.write("date: "+date,"<br>");
+    document.write("day: "+day,"<br>");
+
+    let worldcup = new Date(2002,4,31);
+    let theMonth = worldcup.getMonth(),
+    theDate = worldcup.getDate(),
+    theDay = worldcup.getDay();
+
+    document.write("<h1> worldcup date info </h1>");
+    document.write("month: "+theMonth,"<br>")
+    document.write("date: "+theDate,"<br>");
+    document.write("day: "+theDay,"<br>");
+</script>

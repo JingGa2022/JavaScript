@@ -1,0 +1,23 @@
+<script>
+    let tv = new Object();
+    tv.color = "white";
+    tv.price = 300000;
+    tv.info = function(){
+        document.write("tv color: " + this.color, "<br>")
+        document.write("tv price: " + this.price, "<br>")
+    }
+
+    let car = {
+        color: "black",
+        price: 5000000,
+        info: function(){
+            document.write("car color: " + this.color, "<br>");
+            document.write("car price: " + this.price, "<br>");
+        }
+    };
+
+    document.write("<h1>call tv object method </h1>")
+    tv.info();
+    document.write("<h1>call car object method </h1>")
+    car.info();
+</script>
