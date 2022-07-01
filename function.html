@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<script>
+    let color = ["white", "yellow", "aqua", "purple"]
+
+    let i = 0;
+    function changeColor(){
+        i++;
+        if(i >= color.length){
+            i=0;
+        }
+
+        let tag = document.getElementById("theBody")
+        tag.style.backgroundColor = color[i];
+    }
+    
+    let aaa = setInterval(function(){
+        let a = Math.floor(Math.random()*4);
+        let t = document.getElementById("theBody");
+        t.style.backgroundColor = color[a]}, 100);
+
+
+    function testAvg(arrData){
+        let sum = 0;
+        for(let i = 0; i<arrData.length; i++){
+            sum += Number(prompt(arrData[i] + "score is", "0"))
+        }
+
+        let arrSubject = ["국어", "수학"]
+        let result = testAvg(arrSubject);
+
+        document.write(result)
+    }
+</script>
+
+</head>
+<body id = "theBody">
+    <button onclick="changeColor();">change backgroundColor</button>
+</body>
+</html>

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let add = 0;
+        let sub = 1000;
+    
+        let auto1 = setInterval(function(){
+            add++;
+            console.log("add: " + add);
+        }, 3000)
+    
+        let auto2 = setInterval(function(){
+            sub--;
+            console.log("sub: " + sub);
+        }, 3000)
+    </script>
+    
+    <button onclick="clearInterval(auto1)">증가정지</button>
+    <button onclick="clearInterval(auto2)">감소정지</button>
+</body>
+</html>

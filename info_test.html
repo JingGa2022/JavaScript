@@ -1,0 +1,22 @@
+<script>
+   let info = navigator.userAgent.toLowerCase();
+   let oslmg = null;
+
+   if(info.indexOf('windows') >=0){
+    oslmg = "windows.png"
+   }else  if(info.indexOf('macintosh') >=0){
+    oslmg = "macintosh.png"
+   }else  if(info.indexOf('iphone') >=0){
+    oslmg = "iphone.png"
+   }else  if(info.indexOf('android') >=0){
+    oslmg = "android.png"
+   }
+
+   document.write("<img src=\"images/"+oslmg + "\">", "<br>")
+   let scr = screen;
+   let cs_w = scr.width;
+   let cs_h = scr.height;
+
+   document.write("mointor_w : " + sc_w +"px","<br>")
+   document.write("mointor_h: " + sc_h +"px","<br>")
+</script>
